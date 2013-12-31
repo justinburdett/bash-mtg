@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+ARGV.each do |arg|
+	url = "http://gatherer.wizards.com/Handlers/Image.ashx?type=card&name="
+	card_url = url + arg
+    system("open", card_url)
+end
